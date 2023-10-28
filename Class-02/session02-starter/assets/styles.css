@@ -1,0 +1,44 @@
+body {
+    font-family: Arial;
+}
+p {
+    margin:8px 0px;
+}
+.container {
+    border:1px solid blue;
+    width:80vw;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    padding: 20px;
+}
+.pokemon {
+    border:1px solid #ccc;
+    padding:20px 20px;
+    margin:10px;
+    width:30%;
+}
+
+/* navigation menu CSS */
+nav {
+    padding: 10px 30px;
+    font-size: 25px;
+}
+nav > ul {
+    list-style-type:none;
+    padding:0px;
+}
+nav > ul > li {
+    display:inline;
+    margin-right:20px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+h1 {
+    padding-left: 30px;
+    font-size: 40px;
+}

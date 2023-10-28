@@ -1,0 +1,40 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Pokemon</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      body{
+        margin: 0;
+      }
+      header { 
+        background-color: cyan; 
+      } 
+      footer { 
+        background-color: beige; 
+        padding: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul style="display: flex; gap:20px; list-style-type:none; padding-bottom: 10px;">
+          <li><a href="/">Home</a></li>
+          <li><a href="/show-all">All Pokemon</a></li>
+          <li><a href="/super">Super Pokemon</a></li>
+          <li><a href="/random">Random Pokemon</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    {{!-- only the middle changes --}}
+    {{{body}}}
+
+    <footer>
+      <p>&copy; This is my site</p>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family:"Arial"
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome {{ myName }} !</h1>
+    <p>This page was created using handlebars!</p>
+    {{!-- server will set the value of myName, myAge --}}
+    <p>My name is: {{ myName }}</p>
+    <p>My age is: {{ myAge}}</p>
+
+    <p>Demo of a loop</p>
+    {{!-- begining of your loop --}}
+    {{#each testScores}}
+        <p>Score: {{this}}</p>
+        <p>blah!</p>
+    {{/each}}
+    {{!-- end of your loop --}}
+
+    <p>Showing all students</p>
+    {{#each studentsList}}
+        <p>Name: {{this.name}}</p>
+        <p>Age: {{this.age}}</p>
+        <button>Push me</button>
+    {{/each}}
+
+    {{!-- for (currScore of testScores) {
+        console.log(<p>Score ${currScore}</p>
+    }
+    for (this of testScores) {
+        console.log(<p>Score ${currScore}</p>
+    } --}}
+
+
+    
+
+</body>
+</html>

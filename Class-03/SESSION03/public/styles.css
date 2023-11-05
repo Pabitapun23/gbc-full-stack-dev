@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+}
+
+form {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    margin: 30px auto;
+    width: 60%;
+    background-color: lightgray;
+}
+
+form input {
+    padding: 8px 10px;
+    margin-top: 10px;
+}
+
+#btn-result {
+    padding: 8px;
+    width: 50%;
+    margin: 0 auto;
+    color: white;
+    background-color: green;
+    border: 1px solid green;
+    border-radius: 5px;
+}

@@ -1,0 +1,25 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Catalog</title>
+  </head>
+  <body>
+    <h1>Course Catalog</h1>
+    {{! TODO: list of courses goes here }}
+
+    {{#each CourseDetail}}
+      <div style="border: 1px solid #ccc; padding:20px; margin: 10px;">
+        <p>Course Code: {{this.code}}</p>
+        <p>Course Title: {{this.title}}</p>
+
+        {{#if this.taughtBy}}
+          <p>Instructor: {{this.taughtBy}}</p>
+        {{else}}
+          <p style="color: red;">ERROR: This course has no professor</p>
+        {{/if}}
+      </div>
+    {{/each}}
+  </body>
+</html>

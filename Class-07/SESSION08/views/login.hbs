@@ -1,0 +1,29 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <body>
+    {{#if errorMsg}}
+      <h5>{{errorMsg}}</h5>
+    {{else}}
+      <h5>Please login below</h5>
+    {{/if}}
+
+    <form method="post" action="/login">
+      <label>Username: </label><input name="username" type="text" />
+      <br /><br />
+      <label>Password: </label><input name="password" type="password" />
+      <br /><br />
+      <input type="radio" name="userType" value="driver" />
+      <label for="userType">I am a driver</label>
+
+      <input type="radio" name="userType" value="passenger" />
+      <label for="userType">I am a passenger</label>
+      <br /><br />
+
+      <button type="submit">Login</button>
+    </form>
+  </body>
+</html>

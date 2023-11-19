@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+}
+
+button, input {
+    margin:4px 0px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+}
+
+.column{
+    flex: 20%;
+    max-width: 20%;
+    margin: 5px;
+    padding: 5px;
+}
+
+.imgLarge{
+    width: 80%;
+}
+
+.shadowCard{
+    width: 80%;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    padding: 10px;
+}
+
+.header{
+    text-align: center;
+    background-color: cornflowerblue;
+    color: white;
+    padding: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .column{
+        flex: 40%;
+        max-width: 40%;
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column{
+        flex: 90%;
+        max-width: 90%;
+        margin: 5px;
+    }
+}

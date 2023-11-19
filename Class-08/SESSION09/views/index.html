@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Services</title>
+
+    <link rel="stylesheet" href="css/app.css">
+
+    <script src="/js/index.js" defer></script>
+</head>
+<body>
+    <h1>Consuming data from Web Service (REST API)</h1>
+
+    <h3>Access the data from API on the client side</h3>
+
+    <button type="submit" id="btnGetAll">Get All Countries</button>
+    <br>
+
+    <label for="countryName">Enter country name : </label>
+    <input type="text" name="countryName" id="countryName">
+    <br>
+    <button id="btnGetCountry">Get Country Details</button>
+
+    <div>
+        <h1 class="header">Country List</h1>
+        <div id="countryData" class="row">
+
+        </div>
+    </div>
+    
+</body>
+</html>

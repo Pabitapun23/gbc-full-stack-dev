@@ -1,0 +1,29 @@
+<main>
+  {{! displays a HBS page that shows a list of songs }}
+  {{! List of songs }}
+  {{! looping the songs from musicList }}
+
+  <ul style="list-style-type: none;">
+    {{#each musicList}}
+      <li>
+        <div class="card-music">
+          <form action="/add-song/{{this.songId}}" method="post" id="home-form">
+            <img
+              src="images/{{this.artistImage}}"
+              alt="This is an image of {{this.artist}}"
+              style="width: 150px; height:150px;"
+            />
+            <div>
+              <p>Song Title: <span>{{this.title}}</span> </p>
+              <p>Artist: <span>{{this.artist}}</span></p>
+
+              <button type="submit" id="btn-add">Add to Playlist</button>
+
+            </div>
+          </form>
+        </div>
+      </li>
+    {{/each}}
+  </ul>
+
+</main>

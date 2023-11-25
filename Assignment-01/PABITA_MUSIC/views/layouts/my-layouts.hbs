@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout of webpage</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 style="padding-top: 20px; text-align:center; margin: 0px;">Welcome to my webpage!</h1>
+        <nav>
+            <ul>
+                 {{!-- clicking on this link navigates to the / endpoint --}}
+                <li><a href="/">Home</a></li>
+
+                {{!-- clicking on this link navigates to the /playlist endpoint --}}
+                <li><a href="/playlist">My Playlist</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    {{!-- This part will be different in every page --}}
+    {{{body}}}
+
+    {{!-- <footer>
+        <p>&copy; This  is a music site</p>
+    </footer> --}}
+    
+</body>
+</html>

@@ -1,0 +1,21 @@
+<main>
+  {{! displays a HBS page that shows the songs on a user’s playlist }}
+  <ul style="list-style-type: none;">
+    {{#each myPlaylist}}
+      <li>
+        <div class="card-music">
+          <form
+            action="/delete-song/{{this.songId}}"
+            method="post"
+            id="playlist-form"
+          >
+            <div>
+              <span>{{this.title}}</span>
+              <button type="submit" id="btn-remove">Remove</button>
+            </div>
+          </form>
+        </div>
+      </li>
+    {{/each}}
+  </ul>
+</main>

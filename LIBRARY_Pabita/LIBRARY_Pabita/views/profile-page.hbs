@@ -1,0 +1,36 @@
+<main>
+  {{! Profile section }}
+  <h1>Profile Page</h1>
+
+  {{! User details section }}
+  <section id="profileCard">
+    <p>Name: <span>{{user.name}}</span></p>
+    <p>Library Card Number: <span>{{user.library_card_number}}</span></p>
+    <p>Phone Number: <span>{{user.phone_number}}</span></p>
+  </section>
+
+  {{!-- List of borrowed book section --}}
+  {{#if bookList}}
+    <section id="bookList">
+      <h2>List of borrowed Books</h2>
+      <ul>
+        {{#each bookList}}
+          <li>
+            <div class="bookCard">
+              <img src="/images/books/{{this.image}}" alt="Atomic habits" />
+              <div class="bookCardDetails">
+                <p>Title: <span>{{this.title}}</span></p>
+                <p>Author: <span>{{this.author}}</span></p>
+
+                <a href="/return-book/{{this._id}}" id="btnReturn">RETURN</a>
+
+              </div>
+            </div>
+          </li>
+        {{/each}}
+      </ul>
+    </section>
+  {{else}}
+    <p id="msg">You have no books checked out</p>
+  {{/if}}
+</main>

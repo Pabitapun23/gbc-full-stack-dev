@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Website</title>
+
+    {{! External stylesheet }}
+    <link rel="stylesheet" href="/css/app.css" />
+  </head>
+  <body>
+    {{! Navigation Section }}
+    <header>
+      <nav>
+        {{! Logo section }}
+        <a href="/" id="logo">Library</a>
+
+        {{! Navigation links }}
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/login">Login</a></li>
+          <li><a href="/profile">Profile</a></li>
+          <li><a href="/logout">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    {{! This is a main section that will change on every page }}
+    {{{body}}}
+
+    {{! Footer section }}
+    {{!-- <footer>
+      <p>&copy; This is a Library website</p>
+    </footer> --}}
+
+  </body>
+</html>

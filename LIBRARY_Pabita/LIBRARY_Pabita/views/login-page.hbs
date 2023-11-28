@@ -1,0 +1,31 @@
+<main>
+  <h1>Login page</h1>
+
+  {{#if errMsg}}
+    <h3 style="color: red; text-align: center;">{{errMsg}}</h3>
+  {{/if}}
+
+  <section>
+    {{! <img src="/images/books/login.jpeg" alt="Login" /> }}
+    <form action="/login" method="POST">
+      <label for="libraryCardNumber">Library Card Number</label>
+      <input
+        type="text"
+        name="libraryCardNumber"
+        id="libraryCardNumber"
+        placeholder="Enter your library card number"
+      />
+      <br /><br />
+      <label for="password">Password</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Enter your password"
+      />
+      <br /><br />
+      <button type="submit" id="btn-login">Login</button>
+    </form>
+  </section>
+
+</main>

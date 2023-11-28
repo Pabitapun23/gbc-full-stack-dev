@@ -1,0 +1,231 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  padding: 15px 0;
+  background-color: #3e2a19;
+}
+
+/* Styling Navigation section */
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Styling logo */
+#logo {
+  font-size: 40px;
+  padding-left: 50px;
+  padding-top: 5px;
+  text-decoration: none;
+  color: #fcf6f5;
+}
+
+/* styling nav links */
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-right: 50px;
+  gap: 30px;
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fcf6f5;
+  font-size: 20px;
+}
+
+nav a:hover {
+  color: #fbceb1;
+  text-decoration: underline;
+}
+
+/* Styling Homepage */
+/* Styling welcome section */
+h1 {
+  font-size: 40px;
+  color: #654321;
+  text-align: center;
+}
+
+#quote {
+  font-size: 25px;
+  color: gray;
+  text-align: center;
+}
+
+/* Styling Books section in homepage */
+#booksSection {
+  margin: 0 30px;
+  padding-bottom: 20px;
+}
+
+h2 {
+  font-size: 35px;
+  color: #654321;
+  padding: 20px 30px;
+  text-decoration: underline;
+}
+
+#booksSection ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.bookCard {
+  background-color: #efebeb;
+  border: 1px solid #efebeb;
+  width: 500px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.bookCard > img {
+  width: 40%;
+  height: 280px;
+}
+
+.bookCardDetails {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+  font-size: 20px;
+  font-weight: bold;
+  width: 60%;
+}
+
+.bookCardDetails p {
+  margin: 10px 15px;
+}
+
+span {
+  color: #654321;
+}
+
+#btnBorrow {
+  border: 1px solid #654321;
+  border-radius: 8px;
+  background-color: #654321;
+  color: white;
+  padding: 13px 20px;
+  margin: 50px 10px 10px 20px;
+  font-size: 18px;
+  text-decoration: none;
+  text-align: center;
+  width: 45%;
+}
+
+#btnBorrow:hover {
+  color: white;
+  background-color: gray;
+  border: 1px solid gray;
+}
+
+/* Styling login page and profile page */
+form {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #efebeb;
+  padding: 30px;
+  width: 23%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+label {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  font-size: 15px;
+  color: gray;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* style login button */
+#btn-login {
+  border: 1px solid #654321;
+  border-radius: 8px;
+  background-color: #654321;
+  color: white;
+  padding: 10px 20px;
+  font-size: 20px;
+  width: 30%;
+  margin: 0 auto;
+}
+
+#btn-login:hover {
+  color: white;
+  background-color: gray;
+  border: 1px solid gray;
+}
+
+/* Styling profile page */
+#profileCard {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #efebeb;
+  padding: 20px 30px;
+  width: 23%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 20px;
+}
+
+#profileCard > p {
+  margin: 15px;
+}
+
+#bookList {
+  margin: 10px 30px;
+}
+
+#bookList ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+#btnReturn {
+  border: 1px solid #654321;
+  border-radius: 8px;
+  background-color: #654321;
+  color: white;
+  padding: 13px 20px;
+  margin: 70px 10px 10px 20px;
+  font-size: 18px;
+  text-decoration: none;
+  text-align: center;
+  width: 45%;
+}
+
+#btnReturn:hover {
+  color: white;
+  background-color: gray;
+  border: 1px solid gray;
+}
+
+#msg {
+  font-size: 25px;
+  color: gray;
+  text-align: center;
+}

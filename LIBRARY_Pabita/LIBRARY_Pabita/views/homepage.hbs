@@ -1,0 +1,32 @@
+<main>
+  {{! Welcome section }}
+  <h1>Welcome to Library Homepage</h1>
+  <p id="quote">Do you want to read books? Check out our amazing books
+    collections!</p>
+
+  {{! Books section }}
+  <section id="booksSection">
+    <h2>List of Books</h2>
+
+    <ul style="padding-left: 0;">
+      {{! loop for getting list of books }}
+      {{#each books}}
+        <li>
+          <div class="bookCard">
+            <img src="/images/books/{{this.image}}" alt="Atomic habits" />
+            <div class="bookCardDetails">
+              <p>Title: <span>{{this.title}}</span> </p>
+              <p>Author: <span>{{this.author}}</span></p>
+              {{#if this.borrowed_by}}
+                <p style="color: rgb(53, 53, 120); font-size: 18px; padding-top: 30px;">UNAVAILABLE - currently on loan</p>
+              {{else}}
+                <a href="/borrow-book/{{this._id}}" id="btnBorrow">Borrow Now</a>
+              {{/if}}
+            </div>
+          </div>
+        </li>
+      {{/each}}
+    </ul>
+
+  </section>
+</main>

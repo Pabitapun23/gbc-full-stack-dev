@@ -15,3 +15,8 @@ It is a **web application** for a **mobile catalog**, where users can add music 
 I built this web application using **NodeJS, ExpressJS, MongoDB, Handlebars and CSS.**
 
 ![](https://github.com/Pabitapun23/gbc-full-stack-dev/blob/main/Assignment-01/Music-app-gif.gif)
+
+### 3. Practice Apps
+There are some basic apps that I made to practice NodeJs, Express JS, and Handlebars.
+
+![](https://github.com/Pabitapun23/gbc-full-stack-dev/blob/main/Class-02/Basic%20practise%20apps.gif)

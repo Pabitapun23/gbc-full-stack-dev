@@ -14,4 +14,4 @@ I built this web application using **NodeJs, ExpressJs, MongoDB, Handlebars, HTM
 It is a **web application** for a **mobile catalog**, where users can add music cards to their playlists, and remove them if they want. All these are connected to the database using MongoDB. 
 I built this web application using **NodeJS, ExpressJS, MongoDB, Handlebars and CSS.**
 
-![]()
+![](https://github.com/Pabitapun23/gbc-full-stack-dev/blob/main/Assignment-01/Music-app-gif.gif)
